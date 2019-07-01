@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style type="text/css">
+	.divstyle{
+		padding-top: 40px;
+	}
+	body{
+		position: relative;
+	}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('body').scrollspy({
+			target:'#mainNavbar',
+			offset:10
+		});
+
+	});
+</script>
+</head>
+<body>
+	<nav id="mainNavbar" class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+	<div class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#divsunset">Home</a></li>
+			<li><a href="#divPenguin">Contact</a></li>
+			<li ><a href="#divDesert">About</a></li>
+			<li ><a href="#divTulip">Products</a></li>
+		</ul>
+	</div>
+</nav>
+
+	<div class="divstyle" id="divsunset">
+		<h1>Sunset</h1>
+		<img src="laptop.jpg" class="img-responsive" height="500px" width="500px">
+	</div>
+	<div class="divstyle" id="divPenguin">
+		<h1>Penguins</h1>
+		<img src="penguin.jpg" class="img-responsive" height="500px" width="500px">
+	</div>
+	<div class="divstyle" id="divDesert">
+		<h1>Desert</h1>
+		<img src="desert.jpg" class="img-responsive" height="500px" width="500px">
+	</div>
+	<div class="divstyle" id="divTulip">
+		<h1>Tulips</h1>
+		<img src="tulips.jpg" class="img-responsive" height="500px" width="500px">
+	</div>
+
+</div>
+</body>
+</html>

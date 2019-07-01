@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style type="text/css">
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Basic Modal Example</h2>
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">open modal</button>
+	<div class="modal fade" id="myModal" role="dialogue">
+		<div class="modal-dialogue">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">close</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">login to site.com</h4>
+				</div>
+				<div class="modal-body">
+					<div class="well">
+						<form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+							<div class="form-group">
+								<label for="username" class="control-label">Username</label>
+								<input type="text" class="form-control" id="username" name="username" value="" required="" title="please enter your username" placeholder="example@gmail.com">
+								<span class="help-block"></span>
+							</div>
+							<div class="form-group">
+								<label for="password" class="control-label">password</label> <input type="password" class="form-control" id="password" name="password" value="" required="" title="please enter your password">
+								<span class="help-block"></span>
+							</div>
+							<div id="loginErrorMsg" class="alert alert-error hide">wrong username or password</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" name="remember" id="remember">remember login </label>
+									<p class="help-block">(if this is a private computer)</p></div>
+									<button type="submit" class="btn btn-success btn-block">Login</button>
+									<a href="/forgot/" class="btn btn-default btn-block">help to login</a>
+								</form>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		 </div>
+
+
+</body>
+</html>
